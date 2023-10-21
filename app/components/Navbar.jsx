@@ -1,6 +1,8 @@
+import Connect from './Connect';
+
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white p-5">
+    <nav className=" bg-gradient-to-r from-cyan-100 text-black p-5">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <span className="text-2xl font-bold">Marineford</span>
@@ -12,15 +14,13 @@ export default function Navbar() {
           <a href="#" className="hover:underline">
             Projects
           </a>
-          <a href="#" className="hover:underline">
+          {/* <a href="#" className="hover:underline">
             Grants
           </a>
           <a href="#" className="hover:underline">
             Hackathons
-          </a>
-          <button className="bg-white text-black px-4 py-1.5 rounded">
-            Connect Wallet
-          </button>
+          </a> */}
+          <Connect />
         </div>
       </div>
     </nav>

@@ -1,21 +1,29 @@
+import Connect from './Connect';
+
 export default function MainContent() {
   return (
     <>
       {/* MainContent Component */}
-      <div className="bg-green-900 text-white flex flex-col items-center justify-center h-screen">
-        <h1 className="text-5xl font-bold mb-3">Fund Public Goods Through</h1>
-        <h2 className="text-3xl mb-6">Community Voting On Sui</h2>
+      <div className="text-black flex flex-col items-center justify-center h-screen">
+        <h1 className="text-5xl font-bold mb-3">
+          Empowering Ideas with Decentralized Crowdfunding
+        </h1>
+        <h2 className="text-2xl mb-8">
+          Raise funds for your projects in a secure, transparent, and
+          community-driven platform on Sui
+        </h2>
         <div className="flex space-x-4">
-          <button className="bg-white text-black px-6 py-2.5 rounded">
+          {/* <button className="bg-white text-black px-6 py-2.5 rounded">
             Connect Wallet
-          </button>
-          <button className="border-2 border-white text-white px-6 py-2.5 rounded">
+          </button> */}
+          <Connect />
+          <button className="border-2 border-white text-black px-6 py-2.5 rounded">
             Explore Projects
           </button>
         </div>
       </div>
       {/* Features Component */}
-      <div className="bg-gradient-to-r from-green-800 to-black h-screen flex flex-col justify-center items-center text-white">
+      {/* <div className="bg-gradient-to-r from-green-800 to-black h-screen flex flex-col justify-center items-center text-white">
         <h2 className="text-5xl mb-4">
           Built on transparency, accountability, & community driven support
         </h2>
@@ -55,12 +63,12 @@ export default function MainContent() {
               ></path>
             </svg>
           </button>
-          {/* Repeat similar button elements for other icons */}
+         
         </div>
-      </div>
+      </div> */}
 
       {/* Functionality Component */}
-      <div className="bg-green-900 text-white text-center p-10">
+      {/* <div className="bg-green-900 text-white text-center p-10">
         <div className="flex  items-center justify-center">
           <div>
             <h2 className="text-4xl mb-4">How does the magic happen?</h2>
@@ -102,17 +110,17 @@ export default function MainContent() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer Component */}
-      <div className="bg-gradient-to-r from-green-800 to-black text-white text-center p-20">
+      {/* <div className="bg-gradient-to-r from-green-800 to-black text-white text-center p-20">
         <h2 className="text-4xl mb-8">
           Join us in revolutionizing the grants landscape today!
         </h2>
         <button className="px-10 py-3 text-green-900 bg-white rounded-full font-medium transition-transform transform hover:scale-105">
           Get Started
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
